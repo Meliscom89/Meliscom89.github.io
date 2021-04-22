@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Monoton&family=Reggae+One&family=UnifrakturMaguntia&display=swap');
+h1 {
+    color: white;
+    background-color: #920101;
+    font-family: Emilys Candy, curlz, cursive;
+    border-radius: .25em;
+    font-size: 5em;
+    text-align: center;
+}
+#profilePic {
+   float: right; 
+   padding-right: 1.5em;
+   padding-top: 1.5em;
+}
+h2 {
+    font-family: helvetica, sans-serif;
+    font-size: 3em; 
+    border-bottom-style: solid;
+    border-bottom-color: #920101;
+}
+ul {
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+}
+
+footer {
+    color: white;
+    background-color: #920101;
+    text-align: center;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+}
+
