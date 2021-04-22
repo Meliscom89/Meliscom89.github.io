@@ -9,9 +9,10 @@ h1 {
 }
 #profilePic {
    float: right; 
-   padding-right: 1.5em;
-   padding-top: 1.5em;
+   margin-right: 1.5em;
+   margin-top: 1.5em;
    width: 25%;
+   border-radius: .75em;
 }
 h2 {
     font-family: helvetica, sans-serif;
@@ -30,5 +31,6 @@ footer {
     text-align: center;
     font-size: 1em;
     font-family: helvetica, sans-serif;
+    border-radius: .5em;
 }
 
