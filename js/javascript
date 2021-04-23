@@ -2,7 +2,9 @@
 let d = new Date[];
 
 
-let currentYear = d.getFullYear[];
+let year = d.getFullYear[];
+
+year = document.querySelector(#currentYear);
 
 let dayNames = [
     "Sunday",
