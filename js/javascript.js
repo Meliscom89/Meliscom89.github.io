@@ -1,8 +1,8 @@
 
-let d = new Date[];
+let d = new Date();
 
 
-let year = d.getFullYear[];
+let year = d.getFullYear();
 
 year = document.querySelector(currentYear);
 
