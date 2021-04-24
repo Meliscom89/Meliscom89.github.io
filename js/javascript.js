@@ -4,7 +4,7 @@ let d = new Date();
 
 let year = d.getFullYear();
 
-year = document.querySelector(currentYear);
+year = document.querySelector(span);
 
 /*let dayNames = [
     "Sunday",
