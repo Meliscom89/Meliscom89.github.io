@@ -1,0 +1,64 @@
+@media (min-width: 32em) {
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+ #designHillHeading{
+    grid-column: 1 / 3;
+}
+#designHillName{
+    grid-column: 1 / 3;
+}
+#designHillLink{
+    grid-column: 1 / 3;
+}
+#designHillPic{
+    grid-column: 1 / 3;
+}
+#designHillText{
+    grid-column: 1 / 3;
+}
+#dreamingTreeHeading{
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+#dreamingTreeName{
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+#dreamingTreeLink{
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+#dreamingTreePic{
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+#dreamingTreeText{
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
+}
+#appleHeading{
+    grid-column: 2 /  4;
+    grid-row: 6 / 7;
+    margin-top: -1em;
+}
+#appleName{
+    grid-column: 2 /  4;
+    grid-row: 7 / 8;
+}
+#appleLink{
+    grid-column: 2 /  4;
+    grid-row: 8 / 9;
+}
+#applePic{
+    grid-column: 2 /  4;
+    grid-row: 9 / 10;
+}
+#appleText{
+    grid-column: 2 /  4;
+    grid-row: 10 / 11;
+}
+}
