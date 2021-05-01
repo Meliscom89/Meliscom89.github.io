@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Monoton&family=Reggae+One&family=UnifrakturMaguntia&display=swap");
+h1 {
+  color: white;
+  background-color: #920101;
+  font-family: Emilys Candy, curlz, cursive;
+  font-size: 32pt;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 1pt solid black;
+}
+h2 {
+  font-family: Emilys Candy, curlz, cursive;
+  font-size: 24pt;
+  color: white;
+  background-color: #920101;
+  text-align: center;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16pt;
+  font-family: Montserrat, helvetica, sans-serif;
+  text-align: center;
+  color: #920101;
+}
+p {
+  font-size: 12pt;
+  font-family: Montserrat, helvetica, sans-serif;
+  width: 80%;
+  padding: 10%;
+}
+header {
+  background-color: #920101;
+}
+footer {
+  color: white;
+  background-color: #920101;
+  text-align: center;
+  font-size: 12pt;
+  font-family: Montserrat, helvetica, sans-serif;
+  border-radius: 0.5em;
+}
+article a {
+  text-align: center;
+}
+a:link  {
+    color:#020266;
+}
+a:visited{
+    color: #920101;
+}
+a:hover{
+    color: white;
+    background-color: #920101;
+}
