@@ -1,3 +1,5 @@
+@import url(medium.css);
+@import url(large.css) screen and (min-width: 82em);
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Monoton&family=Reggae+One&family=UnifrakturMaguntia&display=swap");
 h1 {
   color: white;
@@ -11,6 +13,7 @@ img {
   margin: 0 auto;
   width: 80%;
   border: 1pt solid black;
+  margin-top: -.5em;
 }
 h2 {
   font-family: Emilys Candy, curlz, cursive;
@@ -27,6 +30,10 @@ h6 {
   font-family: Montserrat, helvetica, sans-serif;
   text-align: center;
   color: #920101;
+}
+
+h4, h5 {
+  margin-top: -1em;
 }
 p {
   font-size: 12pt;
