@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Parisienne&family=Permanent+Marker&display=swap');
+nav {
+	background-color: #abadb0;
+	text-align: center;
+	box-shadow: 0 2px 15px black;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+nav ul li a {
+	display: block;
+	color: #004071;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	color: #ffd400;
+}
+.active {
+	background-color: #004071;
+    color: #abadb0;
+}
+
