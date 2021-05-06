@@ -8,17 +8,19 @@ h1{
 	text-align: center;
 	background-color:#004071;
 	color: #ffd400;
-	font-size: 5em;
+	font-size: 3em;
 	margin-top: .25em;
+	margin-left: 1em;
 	font-family: parisienne, cursive;
 }
 h2{
 	text-align: center;
 	background-color:#004071;
 	color: #abadb0;
-	font-size: 3em;
+	font-size: 2em;
 	margin-top: -1em;
 	margin-bottom: 0;
+	margin-left: 1em;
 	font-family: Permenant Marker;
 }
 h3{
@@ -27,11 +29,13 @@ h3{
 	text-align: center;
 	font-family: parisienne, cursive;
 	margin: 0;
+	font-size: 1.5em;
 	
 }
 p {
 	padding:1em;
-	margin: 0;
+	margin-right: 2em;
+	margin-left: 2em;
 	background-color: white;
 	color: black;
 }
@@ -41,8 +45,9 @@ a{
 nav {
 	background-color: #abadb0;
 	text-align: center;
-	/*box-shadow: 0 2px 15px grey;*/
-	border:#abadb0 ;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-bottom: 1em;
 }
 nav ul {
 	list-style-type: none;
@@ -53,7 +58,7 @@ nav ul li a {
 	display: block;
 	color: #004071;
 	text-align: center;
-	padding: 0.75rem;
+	margin: 1em;
 	text-decoration: none;
 	font-size: 1rem;
 }
@@ -73,7 +78,9 @@ nav a:hover {
 	grid-column: 1 / 2;
 	grid-row: 1 / 4;
 	width: 100%;
-	justify-items: center;
+	margin-top: 2em;
+	margin-left: 2em;
+	margin-bottom: 1em;
 	
 }
 #masthead h1{
@@ -90,4 +97,8 @@ nav a:hover {
 }
 #logo{
 	width: 100%;
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+
 }
