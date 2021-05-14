@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Parisienne&family=Permanent+Marker&display=swap');
 
-*{
-    margin: 0;
-}
 body{
     background-color: #004071;
-    margin: 3rem;
+    margin: 3em;
 
 }
 h2{
     text-align: center;
 	background-color:#004071;
 	color: #abadb0;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: parisienne, cursive;
     margin: 1em;
 }
 .masthead{
     display:grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
     justify-content: center;
 }
@@ -34,7 +31,7 @@ h1 {
     text-align: center;
 	background-color:#004071;
 	color: #ffd400;
-	font-size: 1em;
+	font-size: 2em;
 	font-family: parisienne, cursive;
     margin-top: -.25em;
    
@@ -47,10 +44,10 @@ h1 {
 	color: #abadb0;
 	font-size: 1em;
 	font-family: parisienne, cursive;
-    margin-top: -4.25em;
+    margin-top: -3em;
 }
-nav{
-    grid-column: 3 /4;
+.navigation{
+    grid-column: 3/4;
     grid-row: 1 /2;
     background-color: #abadb0;
 	text-align: center;
@@ -58,42 +55,46 @@ nav{
 	border-color: #abadb0;
     margin-right: 2rem;
 }
-nav ul {
+.navigation ul {
     list-style-type: none;
 	padding: 0;
 	font-family: noto serif, serif;
 }
-nav ul li:first-child{
+.navigation ul li:first-child{
 display: block;
 }
-nav ul li {
+.navigation ul li {
     display:none;
 }
-nav ul li a {
+a{
 	display: block;
 	color: #004071;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
-	padding-top: .5em;
-	padding-bottom: .5em;
+	padding: .5em;
+	
 }
-a:hover {
+
+
+.respond a:hover {
 	color: #ffd400;
     background-color: #004071;
 }
-a:visited{
+.respond a:visited{
     color:#abadb0;
 }
 .respond {
     grid-column: 2 /4;
     grid-row: 1 /2;
+    justify-content: center;
 }
-.respond li{
-    display:block;
+.respond ul li{
+    display:flex;
     margin: 0;
+    justify-content: center;
 }
-.active{
+.respond .active{
     background-color: #004071;
     color: #abadb0;
 }
@@ -108,5 +109,14 @@ a:visited{
     padding: 1em;
     margin: 1em;
     text-align: center;
-
+}
+footer{
+	margin-top: 3em;
+    color: #abadb0;
+}
+footer p {
+	text-align: center;
+}
+footer a{
+    text-decoration: underline;
 }

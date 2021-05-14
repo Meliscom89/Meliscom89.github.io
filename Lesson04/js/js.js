@@ -17,5 +17,6 @@ hamburger.addEventListener('click', () =>
 {topNav.classList.toggle('respond')}, false);
 
 
-
+window.onresize = () => {if (window.innerWidth > 760) topNav.classList.remove('respond')}
+;
 
