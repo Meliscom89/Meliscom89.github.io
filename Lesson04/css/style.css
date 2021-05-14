@@ -23,7 +23,8 @@ h2{
 .logo{
     grid-column: 1 /2;
     grid-row: 1 / 3;
-    width:100px;
+    width:100%;
+    margin-left: 1em;
     
 }
 h1 {
