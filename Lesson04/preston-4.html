@@ -6,60 +6,45 @@
     <meta name="author" content="Melissa Liscom" />
     <meta
       name="description"
-      content="Preston page | Weather Site for Melissa Liscom in WDD 230: Web Frontend Development at Brigham Young University - Idaho"/>
+      content="Preston page | Weather Site for Melissa Liscom in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
     <title>Preston | Melissa Liscom</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/medium.css" />
   </head>
   <body>
     <header class="masthead">
-      <img
-        src="images/logo_cloud.jpg"
-        class="logo-head"
-        alt="Bear Lake Weather or Not Logo"
-      />
-      <h1>Weather <span class="permMarker">or Not</span></h1>
-      <h2>Site Plan</h2>
-      <nav>
+      <img src="images/logoSmall.jpg" class="Logo" alt="Weather or Not Logo" />
+      <h1 class="name">Weather <span class="permMarker">or Not</span></h1>
+      <div class="motto">Bear Lake Weather and Community</div>
+      <nav class="navigation">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="target-audience.html">Target Audience</a></li>
-          <li><a href="color-scheme.html">Color Scheme</a></li>
-          <li><a href="typography.html">Typography</a></li>
+          <li><a class="hamButton">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page1.html" class="active">Preston</a></li>
+          <li><a href="page2.html">Soda Springs</a></li>
+          <li><a href="page3.html">Fish Haven</a></li>
+          <li><a href="page3.html">Storm Center</a></li>
+          <li><a href="page3.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h3>Purpose</h3>
-      <p>
-        The purpose of this site will be to help users stay up-to-date on all
-        things weather, in the area of Bear Lake; specifically in Preston, Soda
-        Springs, and Fish Haven. The site will also be used as a community
-        activity site that keeps users up-to-date on area activities and local
-        news.
-      </p>
-      <h3>Domain Name</h3>
-      <p>
-        <a href="http://wwww.BearLakeWeather-orNot.com" target="_blank" id="domainName"
-          >BearLakeWeather-orNot.com</a
-        >
-      </p>
-      <h3>Logo</h3>
-      <img
-        src="images/logo_cloud.jpg"
-        id="logo"
-        alt="Bear Lake Weather or Not Logo"
-      />
+      <h2>Preston Idaho</h2>
+      <div class="contentbox">Hero with Weather</div>
+      <div class="contentbox forecast">5 Day Forecast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Contact Information</div>
     </main>
     <footer>
-      <p id="copyright">
-        &copy;<span id="currentYear"></span> | Melissa Liscom | New York |
+      <p class="copyright">
+        &copy;<span class="currentYear"></span> | Melissa Liscom | New York |
         <a href="https://www.byui.edu/online" target="_blank"
           >BYUI Online Learning
         </a>
       </p>
-      <p>Last updated:<span id="lastUpdate"></span></p>
+      <p>Last updated:<span class="lastUpdate"></span></p>
     </footer>
     <script src="js/js.js"></script>
   </body>
