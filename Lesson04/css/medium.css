@@ -1,7 +1,5 @@
 @media only screen and (min-width: 32.5em) {
   .navigation {
-    grid-column: 1/4;
-    grid-row: 3 /4;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -17,13 +15,9 @@
   }
   h1 {
     font-size: 4em;
-    grid-column: 2 /4;
-    grid-row: 1 /2;
   }
   .motto{
     font-size: 3em;
-    grid-column: 2 /4;
-    grid-row: 2 /3;
     margin-top: -1em;
   }
   h2 {

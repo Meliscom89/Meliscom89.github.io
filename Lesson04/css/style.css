@@ -3,6 +3,7 @@
 body{
     background-color: #004071;
     margin: 3em;
+    margin-top: 5em;
 
 }
 h2{
@@ -14,22 +15,15 @@ h2{
     margin: 1em;
 }
 .masthead{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
     justify-content: center;
 }
 
 .logo{
-    grid-column: 1 /2;
-    grid-row: 1 / 3;
     width:100%;
     margin-left: 1em;
     
 }
 h1 {
-    grid-column: 2 /3;
-    grid-row: 1 /2;
     text-align: center;
 	background-color:#004071;
 	color: #ffd400;
@@ -39,8 +33,6 @@ h1 {
    
 }
 .motto{
-    grid-column: 2 /3;
-    grid-row: 2 /3;
     text-align: center;
 	background-color:#004071;
 	color: #abadb0;
@@ -48,37 +40,28 @@ h1 {
 	font-family: parisienne, cursive;
     margin-top: -3em;
 }
-.navigation{
-    grid-column: 3/4;
-    grid-row: 1 /2;
-    background-color: #abadb0;
+nav{
 	text-align: center;
-	border-style: solid;
-	border-color: #abadb0;
-    margin-right: 2rem;
 }
-.navigation ul {
+.navigation {
     list-style-type: none;
 	padding: 0;
 	font-family: noto serif, serif;
+
 }
-.navigation ul li:first-child{
+.navigation li:first-child{
 display: block;
 }
-.navigation ul li {
+.navigation li {
     display:none;
 }
 a{
 	display: block;
-	color: #004071;
+	color: #ffd400;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
-	padding: .5em;
-	
 }
-
-
 .respond a:hover {
 	color: #ffd400;
     background-color: #004071;
@@ -86,15 +69,11 @@ a{
 .respond a:visited{
     color:#abadb0;
 }
-.respond {
-    grid-column: 2 /4;
-    grid-row: 1 /2;
-    justify-content: center;
-}
-.respond ul li{
+.respond li{
     display:flex;
     margin: 0;
     justify-content: center;
+    padding: .5em;
 }
 .respond .active{
     background-color: #004071;
