@@ -1,17 +1,23 @@
 @media only screen and (min-width: 32.5em) {
-  .navigation {
+  nav {
     margin-left: 1em;
     margin-right: 1em;
+    grid-column: 1 /4;
+    grid-row: 3 / 4;
+    background-color: #abadb0;
   }
-  .navigation ul li:first-child {
+  .navigation li:first-child {
     display: none;
   }
-  .navigation ul {
+  .navigation {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
-  .navigation ul li {
+  .navigation li {
     display: inline-block;
+  }
+  .navigation li a{
+    color: #004071;
   }
   h1 {
     font-size: 4em;
@@ -23,15 +29,15 @@
   h2 {
     font-size: 2em;
   }
-  .active {
+  .navigation li .active {
     background-color: #004071;
     color: #abadb0;
   }
-  a:hover {
+  .navigation li a:hover {
     color: #ffd400;
     background-color: #004071;
   }
-  a:visited {
+  .navigation li a:visited {
     color: #ffd400;
   }
 
