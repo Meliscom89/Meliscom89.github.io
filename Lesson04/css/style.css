@@ -28,19 +28,21 @@ h1 {
 	font-family: parisienne, cursive;
     padding-left: .5em;
     padding-right: .5em;  
+    grid-column: 2 /4;
 }
 .motto{
 	background-color:#004071;
 	color: #abadb0;
 	font-size: 1.5em;
 	font-family: parisienne, cursive;
-    grid-column: 2 /3;
+    grid-column: 2 /4;
     text-align: center;
 
 }
 nav{
 	text-align: center;;
-    float: right;
+    /*float: right;*/
+    grid-column: 2 /3;
 }
 .navigation {
     list-style-type: none;
@@ -53,10 +55,11 @@ display: block;
 }
 .navigation li {
     display:none;
+    background-color:#abadb0 ;
 }
 a{
 	display: block;
-	color: #ffd400;
+	color: #004071;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
@@ -66,7 +69,7 @@ a{
     background-color: #004071;
 }
 .respond a:visited{
-    color:#abadb0;
+    color:#ffd400;
 }
 .respond li{
     display:flex;
