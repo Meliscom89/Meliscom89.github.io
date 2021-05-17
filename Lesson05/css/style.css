@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Parisienne&family=Permanent+Marker&display=swap');
+
+body{
+    background-color: #004071;
+    margin: 2em;
+
+}
+h2{
+    text-align: center;
+	background-color:#004071;
+	color: #ffd400;
+	font-size: 1.5em;
+	font-family: parisienne, cursive;
+}
+.masthead{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.logo{
+    width:100%;  
+    align-self:flex-end; 
+}
+h1 {
+	background-color:#004071;
+	color: #ffd400;
+	font-size: 2.em;
+	font-family: parisienne, cursive;
+    padding-left: .5em;
+    padding-right: .5em;  
+    grid-column: 2 /4;
+}
+.motto{
+	background-color:#004071;
+	color: #abadb0;
+	font-size: 1.5em;
+	font-family: parisienne, cursive;
+    grid-column: 2 /4;
+    text-align: center;
+
+}
+nav{
+	text-align: center;;
+    /*float: right;*/
+    grid-column: 2 /3;
+}
+.navigation {
+    list-style-type: none;
+	padding: 0;
+	font-family: noto serif, serif;
+
+}
+.navigation li:first-child{
+display: block;
+}
+.navigation li {
+    display:none;
+    background-color:#abadb0 ;
+}
+a{
+	display: block;
+	color: #004071;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+}
+.respond a:hover {
+	color: #ffd400;
+    background-color: #004071;
+}
+.respond a:visited{
+    color:#ffd400;
+}
+.respond li{
+    display:flex;
+    margin: 0;
+    justify-content: center;
+    padding: .5em;
+}
+.respond .active{
+    background-color: #004071;
+    color: #abadb0;
+}
+.permMarker{
+	font-family: permanent marker, sans-serif;
+}
+.contentbox{
+    background-color: #abadb0;
+    color: #004071;
+    border-style: dotted;
+    border-color: #ffd400;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+footer{
+	margin-top: 3em;
+    color: #abadb0;
+}
+footer p {
+	text-align: center;
+    font-size: .75em;
+}
+footer a{
+    text-decoration: underline;
+    color: #ffd400;
+    display: inline;
+    font-size: .75em;
+}
