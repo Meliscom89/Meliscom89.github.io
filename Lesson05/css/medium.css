@@ -12,6 +12,7 @@
   .navigation {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    position: static;
   }
   .navigation li {
     display: inline-block;

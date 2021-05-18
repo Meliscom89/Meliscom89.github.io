@@ -24,7 +24,7 @@ h2{
 h1 {
 	background-color:#004071;
 	color: #ffd400;
-	font-size: 2.em;
+	font-size: 1.75em;
 	font-family: parisienne, cursive;
     padding-left: .5em;
     padding-right: .5em;  
@@ -48,6 +48,9 @@ nav{
     list-style-type: none;
 	padding: 0;
 	font-family: noto serif, serif;
+    position: fixed;
+    top: .25em;
+    right: 20px;
 
 }
 .navigation li:first-child{
