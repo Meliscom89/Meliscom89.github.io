@@ -41,8 +41,8 @@ h1 {
 }
 nav{
 	text-align: center;;
-    /*float: right;*/
     grid-column: 2 /3;
+    
 }
 .navigation {
     list-style-type: none;
@@ -57,12 +57,20 @@ display: block;
     display:none;
     background-color:#abadb0 ;
 }
+.hamButton{
+    margin: .2rem;
+    font-size: 1.6rem;
+}
 a{
 	display: block;
 	color: #004071;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
+}
+.respond .active{
+    background-color: #004071;
+    color: #abadb0;
 }
 .respond a:hover {
 	color: #ffd400;
@@ -73,14 +81,12 @@ a{
 }
 .respond li{
     display:flex;
+    display: block;
     margin: 0;
     justify-content: center;
-    padding: .5em;
+    padding: .8rem 2%;
 }
-.respond .active{
-    background-color: #004071;
-    color: #abadb0;
-}
+
 .permMarker{
 	font-family: permanent marker, sans-serif;
 }
