@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Melissa Liscom" />
-    <meta
-      name="description"
-      content="Preston page | Weather Site for Melissa Liscom in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
-    />
-    <title>Preston | Melissa Liscom</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  <body>
-    <header class="masthead">
-      <img src="images/logo.jpg" class="logo" alt="Weather or Not Logo" />
-      <h1>Weather <span class="permMarker">or Not</span></h1>
-      <div class="motto">Bear Lake Weather and Community</div>
-      <nav>
-        <ul class="navigation">
-          <li><a class="hamButton"> &#9776 Menu</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="preston-4.html" class="active">Preston</a></li>
-          <li><a href="page2.html">Soda Springs</a></li>
-          <li><a href="page3.html">Fish Haven</a></li>
-          <li><a href="page3.html">Storm Center</a></li>
-          <li><a href="page3.html">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Preston Idaho</h2>
-      <div class="contentbox">Hero with Weather</div>
-      <div class="contentbox forecast">5 Day Forecast</div>
-      <div class="contentbox">Article</div>
-      <div class="contentbox">Contact Information</div>
-    </main>
-    <footer>
-      <p class="copyright">
-        &copy;<span class="currentYear"></span> The Weather Site | <a href="https://www.byui.edu/online" target="_blank"
-        >BYUI Online Learning
-      </a> | Melissa Liscom | New York 
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Melissa Liscom" />
+  <meta name="description"
+    content="Preston page | Weather Site for Melissa Liscom in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+  <title>Preston | Melissa Liscom</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <header class="masthead">
+    <img src="images/logo.jpg" class="logo" alt="Weather or Not Logo" />
+    <h1>Weather <span class="permMarker">or Not</span></h1>
+    <div class="motto">Bear Lake Weather and Community</div>
+
+  </header>
+  <main>
+    <nav>
+      <ul class="navigation">
+        <li><a class="hamButton"> &#9776 Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-4.html" class="active">Preston</a></li>
+        <li><a href="page2.html">Soda Springs</a></li>
+        <li><a href="page3.html">Fish Haven</a></li>
+        <li><a href="page3.html">Storm Center</a></li>
+        <li><a href="page3.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <h2>Preston Idaho</h2>
+
+    <div class="townMasthead">
+      <img src="images/downtownEA.jpg" class="dtPreston" alt="Downtown Preston" />
+
+      <section class="weatherSum">
+        <h3>Today's Weather</h3>
+        <h4>Currently:</h4>
+        <p>Sunny</p>
+        <h4 >High:</h4>
+        <p>76° F</p>
+        <h4 >Wind Chill:</h4>
+        <p>74° F</p>
+        <h4>Humidity:</h4>
+        <p>69%</p>
+        <h4>Wind Speed:</h4>
+        <p>5 MPH</p>
+
+      </section>
+
+    </div>
+    <div class="fiveDay">5 Day Forecast</div>
+    <div class="article">
+      <h3>
+        County Sheriff’s Deputy Cleared in Fatal 
+        Shooting
+      </h3>
+      <p>PRESTON, Idaho   –   A Franklin County sheriff’s deputy was cleared on Friday, of the November 19th fatal shooting, which occurred outside Stokes Marketplace in Preston.</p>
+      <p>
+        County Prosecuting Attorney Vic A. Pearson says that Deputy Kelly Biggs’ use of deadly force against the suspect was justified.
+      </p> 
+        50-year-old, Raul Antonio Menjivar-Saabedra, of Grace, was shot and killed the night of the encounter. He had previously been released from a Behavioral Health facility in Logan.
+       <p>
+        Most of the two-hour ordeal was captured on surveillance and body cameras.
+        </p> 
+        On November, 19th 2019 around 8:30 p.m., dispatch received calls about a suspicious male (Saabedra) inside Stokes Marketplace in Preston, officers responded.
         
+        
+        <a href="https://mylocalradio.com/franklin-county-sheriffs-deputy-cleared-in-fatal-shooting-at-local-market/" target="_blank">Click to continue reading.</a>
+        <img src="images/prestonDeputy.jpg" alt="Preston Deputy" class="articleImg">
       </p>
-      <p class="lastUpdate"></p>
-    </footer>
-    <script src="js/js.js"></script>
-  </body>
+    </div>
+    <div class="contact">
+      <h3>Contact Us:</h3>
+      <p>
+        Address: 30 N 1st E Preston, ID 83263
+      </p>
+      <p>
+        Phone:  (999)501-9999
+      </p>
+      Email:  weatherOrNot@won.com
+    </div>
+  </main>
+  <footer>
+    <p class="copyright">
+      &copy;<span class="currentYear"></span> The Weather Site | <a href="https://www.byui.edu/online"
+        target="_blank">BYUI Online Learning
+      </a> | Melissa Liscom | New York
+
+    </p>
+    <p class="lastUpdate"></p>
+  </footer>
+  <script src="js/js.js"></script>
+</body>
+
 </html>
