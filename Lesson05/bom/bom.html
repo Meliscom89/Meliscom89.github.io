@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Melissa Liscom" />
+    <meta
+      name="description"
+      content="Book of Mormon Favorites List for Melissa Liscom in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Book of Mormon Favorites | Melissa Liscom</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="bomstyle.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>📘 Book of Mormon - Top 25</h1>
+    </header>
+    <main>
+      <div class="input">
+        <label for="chapter">Enter Book and Chapter</label>
+        <input type="text" id="fav" placeholder="Alma 5" />
+        <button type="button">Add Chapter</button>
+      </div>
+      <div class="list">
+        <ul></ul>
+      </div>
+    </main>
+    <footer>
+      <p id="copyright">
+        &copy;<span id="currentYear"></span> | Melissa Liscom | New York |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning
+        </a>
+      </p>
+      <p>Last Updated:<span class="lastUpdate"></span> </p>
+    </footer>
+    <script src="bomjs.js"></script>
+  </body>
+</html>
