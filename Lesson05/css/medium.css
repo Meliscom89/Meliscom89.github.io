@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 36em) {
   nav {
     margin-left: 1em;
     margin-right: 1em;
@@ -16,17 +16,23 @@
   }
   .navigation li {
     display: inline-block;
+    border-right-style: solid;
+    border-right-color: #004071;
+    padding: .5em;
   }
   .navigation li a{
     color: #004071;
+    
   }
   h1 {
     font-size: 4em;
+    text-align: center;
   }
   .motto{
     font-size: 3em;
     margin-top: -1em;
     grid-column: 2 /4;
+    text-align: center;
 
   }
   h2 {
@@ -43,5 +49,19 @@
   .navigation li a:visited {
     color: #ffd400;
   }
-
+.permMarker{
+  display: block;
+}
+.pancakePara{
+  width:100%;
+}
+.weatherSum h3{
+  font-size: 1.5em;
+}
+.weatherSum h4{
+  font-size: 1em;
+}
+.weatherSum p{
+  font-size: 1em;
+}
 }
