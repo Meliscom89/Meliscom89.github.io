@@ -24,6 +24,20 @@ document.querySelector(".lastUpdate").textContent = dateFormatted;
 
 
 
+ if (currentDay == 5) {
+    document.querySelector('.pancake').style.display = "block";
+    }
+  
+
+
+
+
+
+
+
+ 
+
+
 
 const hamburger = document.querySelector('.hamButton');
 const topNav = document.querySelector('.navigation')

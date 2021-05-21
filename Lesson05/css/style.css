@@ -90,11 +90,14 @@ nav{
 
 }
 .navigation li:first-child{
-display: block;
+display: block;  
+border-style: solid;
+border-color: #004071;
 }
 .navigation li {
     display:none;
     background-color:#abadb0 ;
+  
 }
 .hamButton{
     margin: .2rem;
@@ -152,21 +155,13 @@ display: none;
 }
 .article h3{
     color: #ffd400;
+    text-align: center;
 }
 .articleImg{
     width:100%;
 }
 .contact{
     color: #ffd400;
-    text-align: center;
-}
-.contentbox{
-    background-color: #abadb0;
-    color: #004071;
-    border-style: dotted;
-    border-color: #ffd400;
-    padding: 1em;
-    margin-bottom: 1em;
     text-align: center;
 }
 footer{
@@ -182,4 +177,15 @@ footer a{
     color: #ffd400;
     display: inline;
     font-size: .75em;
+}
+.pancakePara {
+    color: #004071;
+    background-color: #ffd400;
+    font-size: 1em;
+    padding: .5em;
+    width: 10em;
+    text-align: center;
+}
+.pancake{
+    display:none;
 }
