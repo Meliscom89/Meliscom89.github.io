@@ -163,6 +163,9 @@ display: none;
 .contact{
     color: #ffd400;
     text-align: center;
+    background-color: rgba(171, 173, 176, 0.5);
+    padding: 1em;
+    margin-top: 1em;
 }
 footer{
 	margin-top: 3em;
@@ -189,3 +192,4 @@ footer a{
 .pancake{
     display:none;
 }
+.contact
