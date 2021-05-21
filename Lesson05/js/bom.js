@@ -7,18 +7,18 @@ button.onclick = function() {
  let scripture = input.value;
  input.value = '';
 
- const item = document.createElement('li');
+ const addition = document.createElement('li');
  const text = document.createElement('span');
  const listBtn = document.createElement('button');
 
- item.appendChild(text);
+ addition.appendChild(text);
  text.textContent = scripture;
- item.appendChild(listBtn);
+ addition.appendChild(listBtn);
  listBtn.textContent = 'Delete'
- list.appendChild(item);
+ list.appendChild(addition);
 
  listBtn.onclick = function (empty) {
-     list.removeChild(item);
+     list.removeChild(addition);
  }
  input.focus();
 }
