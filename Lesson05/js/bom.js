@@ -1,3 +1,32 @@
+const output = document.querySelector('.list');
+const fav = document.querySelector('#fav');
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+   if (fav.value !='') {
+    let li = document.createElement('li');
+    let deletebutton = document.createElement('button');
+    li.textContent = fav.value;
+    deletebutton.textContent = 'X';
+
+    li.append(deletebutton);
+    scripture.append(li);
+   }
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 let d = new Date();
 
 let year = d.getFullYear();
