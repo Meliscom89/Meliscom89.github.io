@@ -1,20 +1,27 @@
-const output = document.querySelector('.list');
-const fav = document.querySelector('#fav');
-const button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-   if (fav.value !='') {
-    let li = document.createElement('li');
-    let deletebutton = document.createElement('button');
-    li.textContent = fav.value;
-    deletebutton.textContent = 'X';
+const list = document.querySelector('.list');
+const input = document.querySelector('#fav')
+const button = document.querySelector('button')
 
-    li.append(deletebutton);
-    scripture.append(li);
-   }
+button.onclick = function() {
+ let scripture = input.value;
+ input.value = '';
 
+ const item = document.createElement('li');
+ const text = document.createElement('span');
+ const listBtn = document.createElement('button');
 
-});
+ item.appendChild(text);
+ text.textContent = scripture;
+ item.appendChild(listBtn);
+ listBtn.textContent = 'Delete'
+ list.appendChild(item);
+
+ listBtn.onclick = function (empty) {
+     list.removeChild(item);
+ }
+ input.focus();
+}
 
 
 
