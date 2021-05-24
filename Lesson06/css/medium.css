@@ -1,0 +1,111 @@
+@media only screen and (min-width: 38em) {
+  nav {
+    margin-left: 1em;
+    margin-right: 1em;
+    grid-column: 1 /4;
+    grid-row: 3 / 4;
+    background-color: #abadb0;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: static;
+  }
+  .navigation li {
+    display: inline-block;
+    border-right-style: solid;
+    border-right-color: #004071;
+    padding: 0.5em;
+  }
+  .navigation li a {
+    color: #004071;
+  }
+  h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+  .motto {
+    font-size: 3em;
+    margin-top: -1em;
+    grid-column: 2 /4;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .navigation li .active {
+    background-color: #004071;
+    color: #abadb0;
+  }
+  .navigation li a:hover {
+    color: #ffd400;
+    background-color: #004071;
+  }
+  .navigation li a:visited {
+    color: #ffd400;
+  }
+  .permMarker {
+    display: block;
+  }
+  .pancakePara {
+    width: 100%;
+  }
+  .weatherSum h3 {
+    font-size: 1.5em;
+  }
+  .weatherSum h4 {
+    font-size: 1em;
+  }
+  .weatherSum p {
+    font-size: 1em;
+  }
+  .articleImg {
+    float: right;
+    width: 50%;
+  }
+  .article h3 {
+    font-size: 2.25em;
+  }
+  .article p {
+    font-size: 1.5em;
+  }
+  .fiveDay {
+    display: inline;
+    align-content: center;
+  }
+  .fiveDay h3 {
+    font-size: 2.25em;
+    color: #ffd400;
+    background-color: #abadb0;
+    padding: 0.25em;
+    text-align: center;
+  }
+  .fiveDay ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    grid-gap:1em;
+  }
+  .fiveDay ul li img {
+    width: 100%;
+  }
+  .fiveDay ul li h4 {
+    color: #ffd400;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .fiveDay ul li p{
+    color:#abadb0;
+    text-align: center;
+    font-size: 1em
+  }
+  .map{
+    display: block;
+    float: left;
+    height: 150px;
+}
+}
