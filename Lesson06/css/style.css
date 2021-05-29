@@ -20,7 +20,8 @@ h2{
 }
 .logo{
     width:100%;  
-    align-self:flex-end; 
+    align-self:flex-end;
+    padding-right: 0;
 }
 h1 {
 	background-color:#004071;
