@@ -20,7 +20,13 @@
       <p class="pancakePara">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
     <header class="masthead">
-    <img src="images/logo.jpg" class="logo" alt="Weather or Not Logo" />
+      <picture>
+        <source srcset="images/logo_200px.jpg" media="(min-width:608px)and (max-width:1309px)">
+        <source srcset="images/logo.jpg" media="(min-width:1310px)">
+        <img src="images/logo_100px.jpg" 
+                    class="logo"
+                    alt="Bear Lake Weather or not logo" />
+      </picture>
     <h1>Weather <span class="permMarker">or Not</span></h1>
     <div class="motto">Bear Lake Weather and Community</div>
 
@@ -29,7 +35,7 @@
     <div class="pancake"><p></p></div>
     <nav>
       <ul class="navigation">
-        <li class="hamButton"> &#9776> Menu</li>
+        <li><a class="hamButton"> &#9776 Menu</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="preston-4.html" class="active">Preston</a></li>
         <li><a href="page2.html">Soda Springs</a></li>
@@ -41,20 +47,26 @@
     <h2>Preston Idaho</h2>
 
     <div class="townMasthead">
-      <img src="images/downtownEA.jpg" class="dtPreston" alt="Downtown Preston" />
+      <picture>
+        <source srcset="images/hero-608.jpg" media="(min-width:608px)and (max-width:1309px)">
+        <source srcset="images/hero-1310.jpg" media="(min-width:1310px)">
+        <img src="images/hero-small.jpg" 
+                    class="dtPreston"
+                    alt="Downtown Preston" />
+      </picture>
 
       <section class="weatherSum">
         <h3>Today's Weather</h3>
         <h4>Currently:</h4>
         <p>Sunny</p>
-        <h4 >High:</h4>
-        <p>76° F</p>
+        <h4>Temperature:</h4>
+        <p><span class="temp">54</span>° F</p>
         <h4 >Wind Chill:</h4>
-        <p>74° F</p>
+        <p><span class="windChill"></span></p>
         <h4>Humidity:</h4>
-        <p>69%</p>
+        <p>95%</p>
         <h4>Wind Speed:</h4>
-        <p>5 MPH</p>
+        <p><span class="windSpeed">12</span> MPH</p>
 
       </section>
 
@@ -120,6 +132,15 @@
     <p>Last Updated: <span class="lastUpdate"></span></p>
   </footer>
   <script src="js/js.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    WebFont.load({
+      google:{
+        families:[
+          'Noto Serif', 'Parisienne', 'Permanent Marker'
+        ]
+      }
+    })
+  </script>
 </body>
 
 </html>
