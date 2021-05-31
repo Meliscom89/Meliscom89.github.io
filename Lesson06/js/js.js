@@ -55,3 +55,24 @@ hamburger.addEventListener(
 window.onresize = () => {
   if (window.innerWidth > 760) topNav.classList.remove("respond");
 };
+/*Input: 
+  Get Temp from document (t)
+  Get wind speed from document (s)
+  convert above to numbers
+
+  Processsing:
+  35.74+0.6215t-(35.75s^0.16)+0.4275t*s^0.16 = f
+
+  Output: write f in document
+*/
+
+let t = document.querySelector(".temp").innerHTML;
+let s = document.querySelector(".windSpeed").innerHTML;
+let x = Math.pow(s,0.16);
+var f = [35.74+(0.6215*t)]-(35.75*x)+(0.4275*t*x);
+var f =  Math.round(f) + '°F';
+
+document.querySelector(".windChill").textContent = f;
+
+
+
