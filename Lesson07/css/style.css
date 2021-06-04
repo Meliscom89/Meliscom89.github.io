@@ -1,0 +1,194 @@
+
+body{
+    background-color: #004071;
+    margin: 2em;
+
+}
+
+h2{
+    text-align: center;
+	background-color:#004071;
+	color: #ffd400;
+	font-size: 1.5em;
+	font-family: parisienne, cursive;
+}
+.masthead{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.logo{
+    width:100%;  
+    align-self:flex-end;
+    padding-right: 0;
+}
+h1 {
+	background-color:#004071;
+	color: #ffd400;
+	font-size: 1.75em;
+	font-family: parisienne, cursive;
+    padding-left: .5em;
+    padding-right: .5em;  
+    grid-column: 2 /4;
+}
+.motto{
+	background-color:#004071;
+	color: #abadb0;
+	font-size: 1.5em;
+	font-family: parisienne, cursive;
+    grid-column: 2 /4;
+    text-align: center;
+
+}
+.townMasthead{
+    margin: 10px auto;
+    position: relative;
+    z-index: -1;
+}
+.dtPreston{
+    width: 100%;
+}
+.weatherSum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 212, 0, 0.8);
+    font-family: noto serif, serif;
+    width:40%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: 1px solid #abadb0;
+    padding: .5em;
+    box-shadow: 0 0 30px #111;
+    color: #004071;
+}
+.weatherSum h3{
+    grid-column: 1 /3;
+    font-size: .75em;
+    margin: 0.25em;
+}
+.weatherSum h4{
+    font-size: .5em;
+    margin: 0.1em;
+}
+.weatherSum p{
+    font-size: .5em;
+    margin: 0.1em;
+}
+nav{
+	text-align: center;;
+    grid-column: 2 /3;
+    
+}
+.navigation {
+    list-style-type: none;
+	padding: 0;
+	font-family: noto serif, serif;
+    top: .25em;
+    right: 20px;
+
+}
+.navigation li:first-child{
+display: block;  
+}
+.navigation li {
+    display:none;
+    background-color:#abadb0 ;
+  
+}
+.hamButton{
+    margin: .2rem;
+    font-size: 1.6rem;
+}
+a{
+	display: block;
+	color: #004071;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+}
+.respond .active{
+    background-color: #004071;
+    color: #abadb0;
+}
+.respond a:hover {
+	color: #ffd400;
+    background-color: #004071;
+}
+.respond a:visited{
+    color:#ffd400;
+}
+.respond li{
+    display:flex;
+    margin: 0;
+    justify-content: center;
+    padding: .8rem 2%;
+}
+
+.active{
+    background-color: #004071;
+    color: #abadb0;
+}
+a:hover {
+	color: #ffd400;
+    background-color: #004071;
+}
+a:visited{
+    color:#ffd400;
+}
+
+.permMarker{
+	font-family: permanent marker, sans-serif;
+}
+.fiveDay{
+display: none;
+}
+.article{
+    background-color: #abadb0;
+    color: #004071;
+    padding: 1em;
+}
+.article h3{
+    color: #ffd400;
+    text-align: center;
+}
+.articleImg{
+    width:100%;
+}
+.contact{
+    color: #ffd400;
+    background-color: rgba(171, 173, 176, 0.5);
+    padding: 1em;
+    margin-top: 1em;
+}
+.contact img{
+    padding-right: 1em;
+}
+footer{
+	margin-top: 3em;
+    color: #abadb0;
+}
+footer p {
+	text-align: center;
+    font-size: .75em;
+}
+footer a{
+    text-decoration: underline;
+    color: #ffd400;
+    display: inline;
+    font-size: .75em;
+}
+.pancakePara {
+    color: #004071;
+    background-color: #ffd400;
+    font-size: 1em;
+    padding: .5em;
+    width: 10em;
+    text-align: center;
+}
+.pancake{
+    display:none;
+}
+.map{
+    display:none;
+}

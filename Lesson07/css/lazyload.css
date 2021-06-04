@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy');
+h1 {
+    color: white;
+    background-color: #920101;
+    font-family: Emilys Candy, curlz, cursive;
+    border-radius: .25em;
+    font-size: 3em;
+    text-align: center;
+}
+img[data-src]{
+    filter:blur(0.2em);
+}
+img{
+    filter:blur(0em);
+    transition: filter 0.5s;
+}
+footer {
+    color: white;
+    background-color: #920101;
+    text-align: center;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+    border-radius: .5em;
+}

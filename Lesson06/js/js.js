@@ -61,6 +61,8 @@ window.onresize = () => {
   convert above to numbers
 
   Processsing:
+  if tempis less than
+
   35.74+0.6215t-(35.75s^0.16)+0.4275t*s^0.16 = f
 
   Output: write f in document
