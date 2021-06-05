@@ -160,6 +160,8 @@ display: none;
     background-color: rgba(171, 173, 176, 0.5);
     padding: 1em;
     margin-top: 1em;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 .contact img{
     padding-right: 1em;
@@ -191,4 +193,15 @@ footer a{
 }
 .map{
     display:none;
+}
+.imageGrid{
+    display:grid;
+    justify-items:center;
+    grid-gap:1em;
+}
+.imageGrid picture{
+    background-color:#abadb0;
+    border-style: solid;
+    border-color: #abadb0;
+
 }

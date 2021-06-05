@@ -1,3 +1,5 @@
+
+// last updated
 let d = new Date();
 
 let year = d.getFullYear();
@@ -37,10 +39,13 @@ let dateFormatted =
 
 document.querySelector(".lastUpdate").textContent = dateFormatted;
 
+
+//pancake banner
 if (currentDay == 5) {
   document.querySelector(".pancake").style.display = "block";
 }
 
+//hamburger button
 const hamburger = document.querySelector(".hamButton");
 const topNav = document.querySelector(".navigation");
 
@@ -56,3 +61,15 @@ window.onresize = () => {
   if (window.innerWidth > 760) topNav.classList.remove("respond");
 };
 
+
+//lazyload
+let imagesToLoad= document.querySelectorAll('img[data-src]');
+const loadImages = (image) => {
+  image.setAttribute('src',image.getAttribute("data-src"));
+  image.onload = () =>{
+    image.removeAttribute('data-src');
+  };
+};
+imagesToLoad.forEach((img)=> {
+  loadImages(img);
+})

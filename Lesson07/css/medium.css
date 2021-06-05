@@ -105,5 +105,15 @@
     display: block;
     float: left;
     height: 150px;
-}
+  }
+  .imageGrid{
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+    justify-items: center;
+  }
+ 
+  }
+
+
+
 }
