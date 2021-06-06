@@ -40,5 +40,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap:1em;
 }
-
+.imageGrid picture:hover{
+  box-shadow: 5px 5px 5px 5px black;
+}
+.lastImage{
+  grid-column: 3/ 4;
+}
 }

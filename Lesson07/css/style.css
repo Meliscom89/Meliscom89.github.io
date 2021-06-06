@@ -23,6 +23,7 @@ h2{
     padding-right: 0;
 }
 h1 {
+    text-align: center;
 	background-color:#004071;
 	color: #ffd400;
 	font-size: 1.75em;
@@ -203,5 +204,9 @@ footer a{
     background-color:#abadb0;
     border-style: solid;
     border-color: #abadb0;
-
 }
+.imageGrid picture figcaption{
+    color: #004071;
+    text-align: center;
+}
+

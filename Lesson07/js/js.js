@@ -73,3 +73,29 @@ const loadImages = (image) => {
 imagesToLoad.forEach((img)=> {
   loadImages(img);
 })
+
+
+//days between visits
+
+
+let lastDate = localStorage.getItem('lastDateViewed');
+let lastDateValue = lastDate.value;
+let dateValue = date.value;
+if (lastDateValue = null) {
+  localStorage.setItem(lastDateViewed, dateValue);
+  document.querySelector(".visitedLast").textContent = 0;
+}
+else{
+  function getNumberOfDays(lastdateValue, dateValue) {
+    let oneDay = 1000 * 60 * 60 * 24;
+    let diffInTime = dateValue.getTime() - lastDateValue.getTime();
+    let diffInDays =Math.round(diffInTime / oneDay);
+    return diffInDays;
+  }
+  console.log(getNumberOfDays(lastdateValue, dateValue));
+  document.querySelector(".visitedLast").textContent = diffInDays
+  storage.setItem(lastDateViewed, date);
+};
+
+
+
