@@ -16,8 +16,10 @@ table {
 }
 thead {
     background-color: #7fb9c2;
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 2em;
+}
+thead th {
+    padding:.5em;
 }
 tbody th{
     background-color:#628ca6;
