@@ -1,0 +1,49 @@
+
+*{
+    font-family: ubuntu,sans-serif;
+    margin: 0px;
+    border:0px;
+}
+
+.positive{
+    background-color: #7fb9c2;
+}
+table {
+    box-shadow: 7px 7px 7px grey;
+    background-color: grey;
+    margin-top:3em;
+    margin-left:3em;
+}
+thead {
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    padding: 1em;
+}
+tbody th{
+    background-color:#628ca6;
+    font-size: 1.5em;
+    padding: .5em;
+    color: white;
+}
+
+tbody tr {
+    background-color: #e7f0ed;    
+    
+}
+tbody tr td{
+    
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+table tr:nth-child(2n){
+    background-color: #e7ffed;
+}
+tfoot tr {
+    background-color: #7fb9c2;
+    text-align: center;
+}
+tfoot td{
+    padding: 1em;
+}
