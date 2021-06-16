@@ -223,6 +223,8 @@ form fieldset{
     margin: 2em 0;
     background-color:#abadb0;
     padding:1em;
+    width:100%;
+    max-width: 22em;
 }
 
 form legend{
