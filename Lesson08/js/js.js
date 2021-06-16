@@ -39,12 +39,6 @@ let dateFormatted =
 
 document.querySelector(".lastUpdate").textContent = dateFormatted;
 
-
-//pancake banner
-if (currentDay == 5) {
-  document.querySelector(".pancake").style.display = "block";
-}
-
 //hamburger button
 const hamburger = document.querySelector(".hamButton");
 const topNav = document.querySelector(".navigation");
@@ -61,6 +55,10 @@ window.onresize = () => {
   if (window.innerWidth > 760) topNav.classList.remove("respond");
 };
 
+//pancake banner
+if (currentDay == 5) {
+  document.querySelector(".pancake").style.display = "block";
+}
 
 //lazyload
 let imagesToLoad= document.querySelectorAll('img[data-src]');
@@ -93,3 +91,9 @@ else{
 
 document.querySelector(".visitedLast").innerHTML = message;
 localStorage.setItem('lastDate' , Date.now());
+
+//Rating Slider
+function adjustRating(rating) {
+  
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
