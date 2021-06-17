@@ -1,0 +1,49 @@
+/* small viewport*/
+*{
+    margin:0;
+    padding:0;
+}
+
+.cards{
+    display:grid;
+    box-shadow: 0 -5px 10px 5px #777;
+    grid-template-columns:1fr;
+    padding: 1em;
+}
+section{
+    background-color: #aca7f7;
+    padding: 2em;
+    margin: .25em;
+
+    
+}
+img {
+    width: 50%;
+    margin: 1em 25%;
+    box-shadow: 0 0 10px 5px #444;
+    
+}
+h1{
+    text-align: center;
+    font-family: parisienne, cursive;
+}
+h2{
+    text-align: center;
+    font-family: parisienne, cursive;
+}
+
+p{
+    text-align: center;
+    font-family: noto serif, serif;
+}
+/*medium viewport*/
+@media only screen and (min-width: 32em) {
+    .cards{
+        grid-template-columns:1fr 1fr;
+}
+/*large viewport*/
+@media only screen and (min-width: 82em) {
+    .cards{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+}
+}

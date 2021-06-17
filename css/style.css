@@ -34,4 +34,9 @@ footer {
     font-family: helvetica, sans-serif;
     border-radius: .5em;
 }
+.wireframe{
+    padding: 2%;
+    display: block; 
+    max-width: 96%;  
+}
 

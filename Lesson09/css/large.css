@@ -1,0 +1,55 @@
+@media (min-width: 82em) {
+  h1 {
+    font-size: 6em;
+  }
+  .motto {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+  .weatherSum h3 {
+    font-size: 3em;
+  }
+  .weatherSum h4 {
+    font-size: 2em;
+  }
+  .weatherSum p {
+    font-size: 2em;
+  }
+  .permMarker{
+    display: inline;
+  }
+  .articleImg{
+      width:30%;
+  }
+  .article h3{
+      font-size: 4em;
+  }
+  .article p{
+      font-size: 2em;
+  }
+  .fiveDay ul li h4 {
+    font-size: 2em;
+  }
+  .fiveDay ul li p{
+    font-size: 1.5em
+}
+.imageGrid{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:1em;
+}
+.imageGrid picture:hover{
+  box-shadow: 5px 5px 5px 5px black;
+}
+.lastImage{
+  grid-column: 3/ 4;
+}
+
+/* storm form */
+
+form label.sbs {
+  padding: .4rem 0;
+}
+}
