@@ -89,6 +89,8 @@ else{
     message = 'You last visited this site ${diffInDays} days ago.';}
   }
 
+/*document.querySelector(".visitedLast").innerHTML = message;
+localStorage.setItem('lastDate' , Date.now());*/
 
 //Rating Slider
 function adjustRating(rating) {
@@ -103,6 +105,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
+      console.table(jsonObject);
       const towns = jsonObject['towns'];
       
         let card1 = document.createElement('section');

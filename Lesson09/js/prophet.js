@@ -5,7 +5,6 @@ fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
-    //
     .then(function (jsonObject){
         const prophets = jsonObject['prophets'];
         for (let i = 0; i < prophets.length; i++){
