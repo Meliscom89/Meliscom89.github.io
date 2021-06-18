@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 32em) {
   nav {
     grid-column: 1 /4;
     grid-row: 3 / 4;
@@ -48,9 +48,21 @@
   .permMarker {
     display: block;
   }
+  .map{
+    display: block;
+    float: left;
+    height: 150px;
+  }
+  .contact{
+    width:50%;
+    margin: 0 25%;
+  }
+
+  /*Preston only*/
   .pancakePara {
     width: 100%;
   }
+  /*city pages only*/
   .weatherSum h3 {
     font-size: 1.5em;
   }
@@ -101,11 +113,8 @@
     text-align: center;
     font-size: 1em
   }
-  .map{
-    display: block;
-    float: left;
-    height: 150px;
-  }
+  
+  /*gallery */
   .imageGrid{
     grid-template-columns: 1fr 1fr;
     grid-gap:1em;
@@ -115,9 +124,55 @@
     grid-column:1/3;
     align-items: center;
 }
- 
-  }
 
-
-
+/*index only*/
+.home-city-grid section:first-child{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-city-grid section:first-child img{
+  grid-column: 1 /2;
+  grid-row: 1 / 6;
+}
+.home-city-grid section:first-child p{
+  text-align: center;
+}
+.home-city-grid section:nth-child(2){
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-city-grid section:nth-child(2) img{
+  grid-column: 2 /3;
+  grid-row: 1 / 6;
+}
+.home-city-grid section:nth-child(2) p{
+  text-align: center;
+}
+.home-city-grid section:nth-child(3){
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-city-grid section:nth-child(3) img{
+  grid-column: 1 /2;
+  grid-row: 1 / 6;
+}
+.home-city-grid section:nth-child(3) p{
+  text-align: center;
+}
+.articleHome{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding: 1em;
+}
+.articleHome img{
+  grid-column: 2 / 3;
+  grid-row: 1 / 8;
+}
+.articleHome h2{
+ font-size: 2.5em;
+ padding:0 .5em;
+}
+.articleHome p{
+  padding-right: 1em;
+}
 }
