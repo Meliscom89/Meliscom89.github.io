@@ -9,6 +9,11 @@
   h2 {
     font-size: 4em;
   }
+  .contact {
+    width:30%;
+    margin: 0 35%;
+  }
+  /*city pages*/
   .weatherSum h3 {
     font-size: 3em;
   }
@@ -36,6 +41,8 @@
   .fiveDay ul li p{
     font-size: 1.5em
 }
+
+/*gallery*/
 .imageGrid{
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap:1em;
@@ -52,4 +59,49 @@
 form label.sbs {
   padding: .4rem 0;
 }
+/*index page*/
+
+.home-city-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.home-city-grid section:first-child{
+  grid-column: 1 / 2;
+  display:block;
+}
+.home-city-grid section:nth-child(2){
+  grid-column: 2 / 3;
+  display:block;
+}
+.home-city-grid section:nth-child(3){
+  grid-column: 3 / 4;
+  display:block;
+}
+.home-city-grid img{
+  height: 250px;
+  }
+.articleHome{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articleHome p{
+  grid-column: 1 /2;
+}
+.articleHome p.extra{
+  display:block;
+  grid-column: 3 / 4;
+}
+.articleHome p.extra:nth-child(7){
+  grid-row: 2 / 3;
+}
+.articleHome p.extra:nth-child(8){
+  grid-row: 3 / 4;
+}
+.articleHome p.extra:nth-child(9){
+  grid-row: 4 / 5;
+}
+.articleHome p.extra:nth-child(10){
+  grid-row: 5 / 6;
+}
+
 }

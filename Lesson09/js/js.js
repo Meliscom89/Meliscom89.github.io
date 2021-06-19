@@ -55,10 +55,6 @@ window.onresize = () => {
   if (window.innerWidth > 760) topNav.classList.remove("respond");
 };
 
-//pancake banner
-if (currentDay == 5) {
-  document.querySelector(".pancake").style.display = "block";
-}
 
 //lazyload
 let imagesToLoad= document.querySelectorAll('img[data-src]');
@@ -125,12 +121,12 @@ fetch(requestURL)
         image1.setAttribute('alt', 'Preston');
         image1.setAttribute('class', 'picture');
 
+        card1.appendChild(image1);
         card1.appendChild(h21);
         card1.appendChild(h31);
         card1.appendChild(year1);
         card1.appendChild(pop1);
         card1.appendChild(rain1);
-        card1.appendChild(image1);
         document.querySelector('div.home-city-grid').appendChild(card1);
 
         let card2 = document.createElement('section');
@@ -150,12 +146,13 @@ fetch(requestURL)
         image2.setAttribute('alt', 'Soda Springs');
         image2.setAttribute('class', 'picture');
 
+        card2.appendChild(image2);
         card2.appendChild(h22);
         card2.appendChild(h32);
         card2.appendChild(year2);
         card2.appendChild(pop2);
         card2.appendChild(rain2);
-        card2.appendChild(image2);
+        
         document.querySelector('div.home-city-grid').appendChild(card2);
 
         let card3 = document.createElement('section');
@@ -175,12 +172,13 @@ fetch(requestURL)
         image3.setAttribute('alt', 'Fish Haven');
         image3.setAttribute('class', 'picture');
 
+        card3.appendChild(image3);
         card3.appendChild(h23);
         card3.appendChild(h33);
         card3.appendChild(year3);
         card3.appendChild(pop3);
         card3.appendChild(rain3);
-        card3.appendChild(image3);
+        
         document.querySelector('div.home-city-grid').appendChild(card3);
       
     });

@@ -144,10 +144,9 @@ a:visited{
 .contact{
     color: #ffd400;
     background-color: rgba(171, 173, 176, 0.5);
-    padding: 1em;
-    margin-top: 1em;
-    margin-left: 30%;
-    margin-right: 30%;
+    padding: 2%;
+    width: 96%;
+    
 }
 .contact img{
     padding-right: 1em;
@@ -277,12 +276,53 @@ form label.top input:required:valid{
 }
 
 /* Homepage only*/
+.indexHero{
+    width:100%;
+}
+.home-city-grid section{
+    background-color: #abadb0;
+    padding:1em;
+    margin:1em 0;
 
-
-
-
-
-
+}
+.home-city-grid h2{
+    background-color: #abadb0;
+    margin:0;
+    font-size: 3em;
+}
+.home-city-grid img{
+    width:100%;
+}
+.home-city-grid h3{
+    text-align: center;
+    margin:0;
+    color: #004071;
+    font-size: 1em;
+    font-style: italic;
+}
+.home-city-grid p{
+    color: #004071;
+}
+.basketball{
+    width:100%;
+}
+.extra{
+    display:none;
+}
+.basketball{
+    padding:1em 0;
+}
+.articleHome {
+    background-color: #abadb0;
+}
+.articleHome h2{
+    background-color: #abadb0;
+    padding: 1em;
+}
+.articleHome p{
+    color: #004071;
+    padding:0 1em;
+}
 
 
 
