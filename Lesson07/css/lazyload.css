@@ -13,6 +13,8 @@ img[data-src]{
 img{
     filter:blur(0em);
     transition: filter 0.5s;
+    display: inline;
+    margin: 1em 30%;
 }
 footer {
     color: white;
