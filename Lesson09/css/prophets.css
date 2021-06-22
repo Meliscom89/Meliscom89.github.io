@@ -41,6 +41,7 @@ p{
     .cards{
         grid-template-columns:1fr 1fr;
 }
+}
 /*large viewport*/
 @media only screen and (min-width: 82em) {
     .cards{
