@@ -100,21 +100,26 @@
     grid-template-columns: repeat(5, 1fr);
     padding: 0;
     grid-gap:1em;
-    background-color: #abadb0;
+    
   }
   .fiveDay ul li img {
     width: 60%;
-    justify-content: center;
+    padding-left:20%;
+    padding-right:20%;
   }
   .fiveDay ul li .day {
     color: #004071;
     text-align: center;
     font-size: 1.25em;
+    padding: 0.5em;
   }
-  .fiveDay ul li p{
+  .fiveDay ul li .temp{
     color:#ffd400;
     text-align: center;
     font-size: 1em
+  }
+  .forecast li {
+    background-color: #abadb0;
   }
   
   /*gallery */
