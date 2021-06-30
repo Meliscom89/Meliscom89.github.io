@@ -34,7 +34,7 @@ fetch(forecastURL)
       "Saturday",
     ];
 
-    //day1
+//day1
     let x = 0;
     let day = new Date(fiveDay[x].dt_txt);
     let temp = fiveDay[x].main.temp;
@@ -43,7 +43,7 @@ fetch(forecastURL)
       document.querySelector(".temp1").textContent = temp;
       document
         .querySelector("#picDay1")
-        .setAttribute("src", fiveDay[x].weather[0].icon);
+        .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
       document
         .querySelector("#picDay1")
         .setAttribute("alt", fiveDay[x].weather[0].main);
@@ -56,7 +56,7 @@ fetch(forecastURL)
     document.querySelector(".temp2").textContent = temp;
     document
             .querySelector("#picDay2")
-            .setAttribute("src", fiveDay[x].weather[0].icon);
+            .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
     document
             .querySelector("#picDay2")
             .setAttribute("alt", fiveDay[x].weather[0].main);
@@ -69,7 +69,7 @@ fetch(forecastURL)
     document.querySelector(".temp3").textContent = temp;
     document
             .querySelector("#picDay3")
-            .setAttribute("src", fiveDay[x].weather[0].icon);
+            .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
     document
             .querySelector("#picDay3")
             .setAttribute("alt", fiveDay[x].weather[0].main);
@@ -83,7 +83,7 @@ x = 3;
     document.querySelector(".temp4").textContent = temp;
     document
             .querySelector("#picDay4")
-            .setAttribute("src", fiveDay[x].weather[0].icon);
+            .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
     document
             .querySelector("#picDay4")
             .setAttribute("alt", fiveDay[x].weather[0].main);
@@ -98,7 +98,7 @@ x = 4;
     document.querySelector(".temp5").textContent = temp;
     document
             .querySelector("#picDay5")
-            .setAttribute("src", "https://api.openweathermap.org/data/2.5/forecast/" + fiveDay[x].weather[0].icon);
+            .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
     document
             .querySelector("#picDay5")
             .setAttribute("alt", fiveDay[x].weather[0].main);
