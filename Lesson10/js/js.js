@@ -95,15 +95,3 @@ function adjustRating(rating) {
 }
 
 
-//Preston weather data
-
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1bc218cd2519778a9f56ca037b5e02ed&units=imperial";
-fetch(apiURL)
-.then((response) => response.json())
-.then((jsObject) => {
-  document.querySelector('.current').textContent = jsObject.weather[0].main;
-  document.querySelector('.temp').textContent = jsObject.main.temp;
-  document.querySelector('.humidity').textContent = jsObject.main.humidity + '%';
-  document.querySelector('.windSpeed').textContent = jsObject.wind.speed;
-
-  });
