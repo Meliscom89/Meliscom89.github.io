@@ -18,7 +18,7 @@
 <body>
     <header class="masthead">
       <picture>
-        <source srcset="images/logo_200px.jpg" media="(min-width:608px)and (max-width:1309px)">
+        <source srcset="images/logo_200px.jpg" media="(min-width:608px) and (max-width:1309px)">
         <source srcset="images/logo.jpg" media="(min-width:1310px)">
         <img src="images/logo_100px.jpg" 
                     class="logo"
@@ -42,29 +42,29 @@
     </nav>
     <h2>Image Gallery</h2>
     <div class="imageGrid">
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/b_wSnow.jpg" width="300" alt="Black and white path in the snowy woods"></figure><figcaption>Path in Woods</figcaption></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/b_wSnow.jpg" width="300" alt="Black and white path in the snowy woods"></picture><figcaption>Path in Woods</figcaption></figure></div>
         
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/lightningStorm.jpg" width="300" alt="Lightning strick at night"></figure><figcaption>Lightning Strike</figcaption></picture></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/lightningStorm.jpg" width="300" alt="Lightning strick at night"></picture><figcaption>Lightning Strike</figcaption></figure></div>
  
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/sunsetStorm.jpg" width="300" alt="Cloud front at sunset"></figure><figcaption>Clouded Sunset</figcaption></picture></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/sunsetStorm.jpg" width="300" alt="Cloud front at sunset"></picture><figcaption>Clouded Sunset</figcaption></figure></div>
 
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/sunsetLightning.jpg" width="300" alt="Lightning storm at sunset"></figure><figcaption>Sunset Lightning</figcaption></picture></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/sunsetLightning.jpg" width="300" alt="Lightning storm at sunset"></picture><figcaption>Sunset Lightning</figcaption></figure></div>
        
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/morningFog.jpg" width="300" alt="Foggy morning in meadow"></picture></figure><figcaption>Foggy Morning</figcaption></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/morningFog.jpg" width="300" alt="Foggy morning in meadow"></picture><figcaption>Foggy Morning</figcaption></figure></div>
         
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/cherryBlossom_300.jpg" width="300" alt="Light pink spring blossom"></figure><figcaption>Pink Spring Blossom</figcaption></picture></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/cherryBlossom_300.jpg" width="300" alt="Light pink spring blossom"></picture><figcaption>Pink Spring Blossom</figcaption></figure></div>
         
-        <picture><figure><img src = "images/placeholder.jpg" data-src="images/fieldLightning.jpg" width="300" alt="A path leading to a lightning storm over a field."></figure><figcaption> Lightning  in a Field</figcaption></picture></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/fieldLightning.jpg" width="300" alt="A path leading to a lightning storm over a field."></picture><figcaption> Lightning  in a Field</figcaption></figure></div>
        
-        <picture><img src = "images/placeholder.jpg" data-src="images/jasmine.jpg" width="300" alt="White spring Blossoms"></picture>
+        <div><figure><picture><img src = "images/placeholder.jpg" data-src="images/jasmine.jpg" width="300" alt="White spring Blossoms"></picture><figcaption>White Spring Blossoms</figcaption></figure></div>
         
-        <picture class="lastImage"><img src = "images/placeholder.jpg" data-src="images/b_wStorm.jpg" width="300" alt="Black and white storm with person in meadow"></picture>
+        <div class="lastImage"><figure><picture><img src = "images/placeholder.jpg" data-src="images/b_wStorm.jpg" width="300" alt="Black and white storm with person in meadow"></picture><figcaption>Person in a Meadow</figcaption></figure></div>
         
 
 
     </div>
     <div class="contact">
-       <img src="images/prestonMap.jpg"alt="Preston Map" class="map">
+       <img src="images/prestonMap.jpg" alt="Preston Map" class="map">
       <h3>Contact Us:</h3>
      
       <p>
@@ -86,14 +86,15 @@
     <p>Last Updated: <span class="lastUpdate"></span></p>
   </footer>
   <script src="js/js.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-    WebFont.load({
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
       google:{
         families:[
           'Noto Serif', 'Parisienne', 'Permanent Marker'
         ]
       }
-    })
+    });
   </script>
 </body>
 

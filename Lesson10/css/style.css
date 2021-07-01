@@ -206,12 +206,12 @@ display: none;
     justify-items:center;
     grid-gap:1em;
 }
-.imageGrid picture{
+.imageGrid div{
     background-color:#abadb0;
     border-style: solid;
     border-color: #abadb0;
 }
-.imageGrid picture figcaption{
+.imageGrid div figcaption{
     color: #004071;
     text-align: center;
 }
