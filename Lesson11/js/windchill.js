@@ -14,7 +14,7 @@
   N/A
 */
 
-let t = document.querySelector(".temp").innerHTML;
+let t = document.querySelector(".temperature").innerHTML;
 let s = document.querySelector(".windSpeed").innerHTML;
 
 let x = Math.pow(s,0.16);
