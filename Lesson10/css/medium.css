@@ -111,13 +111,13 @@
     padding-right:20%;
   }
   .fiveDay .forecast .forecastDay .day {
-    color: #004071;
+    color: #ffd400;
     text-align: center;
     font-size: 1.25em;
     padding: 0.5em;
   }
   .fiveDay .forecast .forecastDay .temp {
-    color:#ffd400;
+    color:#004071;
     background-color: #004071;
     text-align: center;
     font-size: 1em;

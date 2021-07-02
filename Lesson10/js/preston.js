@@ -8,13 +8,13 @@ let cityid = '5604473';
 let apiURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
 fetch(apiURL)
   .then((response) => response.json())
-  .then((jsObject) => {
+  .then((response) => {
     
-    document.querySelector(".current").textContent = jsObject.weather[0].main;
-    document.querySelector(".temperature").textContent = jsObject.main.temp;
+    document.querySelector(".current").textContent = response.weather[0].main;
+    document.querySelector(".temperature").textContent = response.main.temp;
     document.querySelector(".humidity").textContent =
-      jsObject.main.humidity + "%";
-    document.querySelector(".windSpeed").textContent = jsObject.wind.speed;
+      response.main.humidity + "%";
+    document.querySelector(".windSpeed").textContent = response.wind.speed;
   });
 
 //5 day forcast Preston
@@ -59,18 +59,24 @@ fetch(forecastURL)
     }
   });
 
-//Fish haven weather 
-const apiURLf = "https://api.openweathermap.org/data/2.5/weather?lat=42.036940280951114&lon=-111.39692872325033&units=imperial&appid=1bc218cd2519778a9f56ca037b5e02ed";
-console.log(apiURLf);
 
-fetch(apiURLf)
-  .then((object) => object.json())
-  .then((jsObject) => {
-      console.log(jsObject);
-    
-    // document.querySelector(".currentf").textContent = jsObject.weather[0].main;
-    // document.querySelector(".tempf").textContent = jsObject.main.temp;
-    // document.querySelector(".humidityf").textContent =
-    //   jsObject.main.humidity + "%";
-    // document.querySelector(".windSpeedf").textContent = jsObject.wind.speed;
+  // Town data
+
+const dataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(dataURL)
+  .then((response) => response.json())
+  .then((response) => {
+   console.log(response);
+
+   let events = response.towns[6].events;
+   let x = 0;
+  for(item of events){
+    let item  = document.createElement('p');
+    item.textContent = response.towns[6].events[x];
+    document.querySelector('.eventList').appendChild(item);
+    x++;
+  }
+  
+  
   });
