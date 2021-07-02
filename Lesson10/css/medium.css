@@ -94,7 +94,7 @@
     display: inline;
     align-content: center;
   }
-  .fiveDay ul {
+  .fiveDay .forecast {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -102,25 +102,26 @@
     grid-gap:1em;
     
   }
-  .fiveDay ul li img {
+    .fiveDay .forcast .forecastDay {
+    background-color: #abadb0;
+  }
+  .fiveDay .forecast .forecastDay.fiveD_Pic {
     width: 60%;
     padding-left:20%;
     padding-right:20%;
   }
-  .fiveDay ul li .day {
+  .fiveDay .forecast .forecastDay .day {
     color: #004071;
     text-align: center;
     font-size: 1.25em;
     padding: 0.5em;
   }
-  .fiveDay ul li .temp{
+  .fiveDay .forecast .forecastDay .temp {
     color:#ffd400;
-    text-align: center;
-    font-size: 1em
+    background-color: #004071;
+    font-size: 10em;
   }
-  .forecast li {
-    background-color: #abadb0;
-  }
+
   
   /*gallery */
   .imageGrid{

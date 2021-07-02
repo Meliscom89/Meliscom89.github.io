@@ -1,23 +1,24 @@
-//Preston weather data
+//fish haven weather data
 let appid = '1bc218cd2519778a9f56ca037b5e02ed';
 let url = 'https://api.openweathermap.org/data/2.5/';
 let method = 'weather';
 let units = 'imperial';
 let cityid = '5604473';
+let cityll = '42.036940280951114&lon=-111.39692872325033'
 
-let apiURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
+let apiURL = url + method + "?" + "lat=" + cityll + "&appid=" + appid + "&units=" + units;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    
+    console.log(jsObject);
     document.querySelector(".current").textContent = jsObject.weather[0].main;
-    document.querySelector(".temperature").textContent = jsObject.main.temp;
+    document.querySelector(".temp").textContent = jsObject.main.temp;
     document.querySelector(".humidity").textContent =
       jsObject.main.humidity + "%";
     document.querySelector(".windSpeed").textContent = jsObject.wind.speed;
   });
 
-//5 day forcast Preston
+//5 day forcast fish haven
 let method = 'forecast';
 
 
@@ -59,18 +60,3 @@ fetch(forecastURL)
     }
   });
 
-//Fish haven weather 
-const apiURLf = "https://api.openweathermap.org/data/2.5/weather?lat=42.036940280951114&lon=-111.39692872325033&units=imperial&appid=1bc218cd2519778a9f56ca037b5e02ed";
-console.log(apiURLf);
-
-fetch(apiURLf)
-  .then((object) => object.json())
-  .then((jsObject) => {
-      console.log(jsObject);
-    
-    // document.querySelector(".currentf").textContent = jsObject.weather[0].main;
-    // document.querySelector(".tempf").textContent = jsObject.main.temp;
-    // document.querySelector(".humidityf").textContent =
-    //   jsObject.main.humidity + "%";
-    // document.querySelector(".windSpeedf").textContent = jsObject.wind.speed;
-  });
