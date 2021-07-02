@@ -18,13 +18,12 @@ let t = document.querySelector(".temperature").innerHTML;
 let s = document.querySelector(".windSpeed").innerHTML;
 
 let x = Math.pow(s,0.16);
-var f = [35.74+(0.6215*t)]-(35.75*x)+(0.4275*t*x);
-var f =  Math.round(f) + '°F';
-if (t<=50&&s>=3){
-document.querySelector(".windChill").textContent = f;
+let f = [35.74+(0.6215*t)]-(35.75*x)+(0.4275*t*x);
+let wc =  Math.round(f) + '° F';
+if (t <= 50 && s >= 3){
+document.querySelector(".windChill").textContent = wc;
 }
 else{
     document.querySelector(".windChill").textContent = 'N/A';
-}
-
+};
 

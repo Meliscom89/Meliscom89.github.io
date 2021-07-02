@@ -18,7 +18,7 @@ fetch(apiURL)
   });
 
 //5 day forcast Preston
-let method = 'forecast';
+method = 'forecast';
 
 
 const forecastURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
