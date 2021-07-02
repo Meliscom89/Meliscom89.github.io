@@ -119,7 +119,8 @@
   .fiveDay .forecast .forecastDay .temp {
     color:#ffd400;
     background-color: #004071;
-    font-size: 10em;
+    text-align: center;
+    font-size: 1em;
   }
 
   

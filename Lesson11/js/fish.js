@@ -3,7 +3,6 @@ let appid = '1bc218cd2519778a9f56ca037b5e02ed';
 let url = 'https://api.openweathermap.org/data/2.5/';
 let method = 'weather';
 let units = 'imperial';
-let cityid = '5604473';
 let cityll = '42.036940280951114&lon=-111.39692872325033'
 
 let apiURL = url + method + "?" + "lat=" + cityll + "&appid=" + appid + "&units=" + units;
@@ -12,17 +11,17 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.querySelector(".current").textContent = jsObject.weather[0].main;
-    document.querySelector(".temp").textContent = jsObject.main.temp;
+    document.querySelector(".temperature").textContent = jsObject.main.temp;
     document.querySelector(".humidity").textContent =
       jsObject.main.humidity + "%";
     document.querySelector(".windSpeed").textContent = jsObject.wind.speed;
   });
 
 //5 day forcast fish haven
-let method = 'forecast';
+method = 'forecast';
 
 
-const forecastURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
+const forecastURL = url + method + "?" + "lat=" + cityll + "&appid=" + appid + "&units=" + units;
   
 let daysofweek = [
   "Sunday",
