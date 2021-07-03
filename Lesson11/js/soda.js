@@ -66,7 +66,7 @@ const dataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(dataURL)
   .then((response) => response.json())
   .then((response) => {
-   console.log(response);
+   //console.log(response);
 
    let events = response.towns[0].events;
    let x = 0;

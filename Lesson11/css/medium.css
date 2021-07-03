@@ -133,9 +133,7 @@
     grid-gap:1em;
     justify-items: center;
   }
-  .galleryPic{
-    width:100%;
-  }
+  
   .lastImage{
     grid-column:1/3;
     align-items: center;
