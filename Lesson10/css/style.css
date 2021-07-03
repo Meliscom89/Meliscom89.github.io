@@ -171,8 +171,16 @@ footer a{
     margin: 0.1em;
 }
 .fiveDay{
-display: none;
+    display: none;
 }
+.events .eventTitle{
+    font-size: 2.25em;
+    color: #ffd400;
+    background-color: #004071;
+    padding: 0.25em;
+    text-align: center;
+}
+
 .article{
     background-color: #abadb0;
     color: #004071;
@@ -185,6 +193,7 @@ display: none;
 .articleImg{
     width:100%;
 }
+
 
 
 /* Preston page only*/

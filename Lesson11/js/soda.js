@@ -11,10 +11,10 @@ fetch(apiURL)
   .then((jsObject) => {
     
     document.querySelector(".current").textContent = jsObject.weather[0].main;
-    document.querySelector(".temperature").textContent = jsObject.main.temp;
+    document.querySelector(".temperature").textContent = Math.round(jsObject.main.temp);
     document.querySelector(".humidity").textContent =
       jsObject.main.humidity + "%";
-    document.querySelector(".windSpeed").textContent = jsObject.wind.speed;
+    document.querySelector(".windSpeed").textContent = Math.round(jsObject.wind.speed);
   });
 
 //5 day forcast Preston
@@ -48,7 +48,7 @@ fetch(forecastURL)
       if (item.dt_txt.includes("18:00:00")) {
         let date = new Date(item.dt * 1000);
 
-        temp[x].innerHTML = item.main.temp;
+        temp[x].innerHTML = Math.round(item.main.temp) + '°F';
         day[x].innerHTML = daysofweek[date.getDay()];
         let img =
           "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";

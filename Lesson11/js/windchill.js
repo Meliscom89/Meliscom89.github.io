@@ -14,13 +14,13 @@
   N/A
 */
 
-let t = document.querySelector(".temperature").innerHTML;
-let s = document.querySelector(".windSpeed").innerHTML;
+let t = document.querySelector(".temperature").textContent;
+let s = document.querySelector(".windSpeed").textContent;
 
 let x = Math.pow(s,0.16);
 let f = [35.74+(0.6215*t)]-(35.75*x)+(0.4275*t*x);
 let wc =  Math.round(f) + '° F';
-if (t <= 50 && s >= 3){
+if (t >= 50 && s <= 3){
 document.querySelector(".windChill").textContent = wc;
 }
 else{

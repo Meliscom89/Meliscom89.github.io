@@ -169,7 +169,9 @@ footer a{
     font-size: .75em;
 }
 /*city pages only*/
-
+.fiveDayTitle{
+    display: none;
+}
 .fiveDay{
 display: none;
 }
@@ -177,6 +179,7 @@ display: none;
     background-color: #abadb0;
     color: #004071;
     padding: 1em;
+    margin-bottom: 1em;
 }
 .article h3{
     color: #ffd400;
@@ -185,6 +188,27 @@ display: none;
 .articleImg{
     width:100%;
 }
+.eventTitle {
+    font-size: 2.25em;
+    color: #ffd400;
+    background-color: #004071;
+    padding: 0.25em;
+    text-align: center;
+    margin-bottom: .25em;
+  }
+  .eventList{
+    background-color: #abadb0;
+    padding: 0.5em;
+  }
+  .eventList p {
+    color: #004071;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0.25em;
+  }
+  .events{
+    margin-bottom: 1em;
+  }
 
 
 /* Preston page only*/

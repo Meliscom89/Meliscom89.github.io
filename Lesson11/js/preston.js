@@ -1,28 +1,28 @@
 //Preston weather data
-
-const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1bc218cd2519778a9f56ca037b5e02ed&units=imperial";
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    //console.log(jsObject)
-    document.querySelector(".current").textContent = jsObject.weather[0].main;
-    document.querySelector(".temp").textContent = jsObject.main.temp;
-    document.querySelector(".humidity").textContent =
-      jsObject.main.humidity + "%";
-    document.querySelector(".windSpeed").textContent = jsObject.wind.speed;
-  });
-
-//5 day forcast Preston
 let appid = '1bc218cd2519778a9f56ca037b5e02ed';
 let url = 'https://api.openweathermap.org/data/2.5/';
-let method = 'forecast';
+let method = 'weather';
 let units = 'imperial';
 let cityid = '5604473';
 
+let apiURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((response) => {
+    
+    document.querySelector(".current").textContent = response.weather[0].main;
+    document.querySelector(".temperature").textContent = Math.round(response.main.temp);
+    document.querySelector(".humidity").textContent =
+      response.main.humidity + "%";
+    document.querySelector(".windSpeed").textContent = Math.round(response.wind.speed);
+  });
+
+//5 day forcast Preston
+method = 'forecast';
+
+
 const forecastURL = url + method + "?" + "id=" + cityid + "&appid=" + appid + "&units=" + units;
   
-console.log(forecastURL);
 let daysofweek = [
   "Sunday",
   "Monday",
@@ -36,11 +36,7 @@ let daysofweek = [
 fetch(forecastURL)
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
-    //fiveDay = jsObject.list.filter((forcast) =>
-    //forcast.dt_txt.includes("18:00:00")
-    // );
-    // console.log(fiveDay);
+    
 
     let x = 0;
     let temp = document.querySelectorAll('.forecastDay .temp');
@@ -52,7 +48,7 @@ fetch(forecastURL)
       if (item.dt_txt.includes("18:00:00")) {
         let date = new Date(item.dt * 1000);
 
-        temp[x].innerHTML = item.main.temp;
+        temp[x].innerHTML = Math.round(item.main.temp) + '°F';
         day[x].innerHTML = daysofweek[date.getDay()];
         let img =
           "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";
@@ -63,71 +59,24 @@ fetch(forecastURL)
     }
   });
 
-// //day1
-//    // let x = 0;
-//    // let day = new Date(fiveDay[x].dt_txt);
-//     //let temp = fiveDay[x].main.temp;
 
-//       document.querySelector(".day1").textContent = daysOfWeek[day.getDay()];
-//      document.querySelector(".temp1").textContent = temp;
-//       document
-//         .querySelector("#picDay1")
-//         .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
-//       document
-//         .querySelector("#picDay1")
-//         .setAttribute("alt", fiveDay[x].weather[0].main);
-// //day2
-//     x = 1;
-//     day = new Date(fiveDay[x].dt_txt);
-//     temp = fiveDay[x].main.temp;
+  // Town data
 
-//     document.querySelector(".day2").textContent = daysOfWeek[day.getDay()];
-//     document.querySelector(".temp2").textContent = temp;
-//     document
-//             .querySelector("#picDay2")
-//             .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
-//     document
-//             .querySelector("#picDay2")
-//             .setAttribute("alt", fiveDay[x].weather[0].main);
-// //day3
-//             x = 2;
-//     day = new Date(fiveDay[x].dt_txt);
-//     temp = fiveDay[x].main.temp;
+const dataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-//     document.querySelector(".day3").textContent = daysOfWeek[day.getDay()];
-//     document.querySelector(".temp3").textContent = temp;
-//     document
-//             .querySelector("#picDay3")
-//             .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
-//     document
-//             .querySelector("#picDay3")
-//             .setAttribute("alt", fiveDay[x].weather[0].main);
+fetch(dataURL)
+  .then((response) => response.json())
+  .then((response) => {
+   console.log(response);
 
-// //day4
-// x = 3;
-//     day = new Date(fiveDay[x].dt_txt);
-//     temp = fiveDay[x].main.temp;
-
-//     document.querySelector(".day4").textContent = daysOfWeek[day.getDay()];
-//     document.querySelector(".temp4").textContent = temp;
-//     document
-//             .querySelector("#picDay4")
-//             .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
-//     document
-//             .querySelector("#picDay4")
-//             .setAttribute("alt", fiveDay[x].weather[0].main);
-
-// //day5
-
-// x = 4;
-//     day = new Date(fiveDay[x].dt_txt);
-//     temp = fiveDay[x].main.temp;
-
-//     document.querySelector(".day5").textContent = daysOfWeek[day.getDay()];
-//     document.querySelector(".temp5").textContent = temp;
-//     document
-//             .querySelector("#picDay5")
-//             .setAttribute("src", 'https://openweathermap.org/img/w/' + fiveDay[x].weather[0].icon + '.png');
-//     document
-//             .querySelector("#picDay5")
-//             .setAttribute("alt", fiveDay[x].weather[0].main);
+   let events = response.towns[6].events;
+   let x = 0;
+  for(item of events){
+    let item  = document.createElement('p');
+    item.textContent = response.towns[6].events[x];
+    document.querySelector('.eventList').appendChild(item);
+    x++;
+  }
+  
+  
+  });

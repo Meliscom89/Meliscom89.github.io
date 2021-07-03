@@ -84,11 +84,13 @@
   }
   
   .fiveDayTitle {
+    display: block;
     font-size: 2.25em;
     color: #ffd400;
     background-color: #004071;
     padding: 0.25em;
     text-align: center;
+    margin-bottom: .25em;
   }
   .fiveDay {
     display: inline;
@@ -115,18 +117,24 @@
   }
   .fiveDay ul li .temp{
     color:#ffd400;
+    background-color: #004071;
     text-align: center;
-    font-size: 1em
+    font-size: 1em;
+    padding: 0.5em;
+    border: 5px solid #abadb0;
   }
   .forecast li {
     background-color: #abadb0;
   }
-  
+
   /*gallery */
   .imageGrid{
     grid-template-columns: 1fr 1fr;
     grid-gap:1em;
     justify-items: center;
+  }
+  .galleryPic{
+    width:100%;
   }
   .lastImage{
     grid-column:1/3;
