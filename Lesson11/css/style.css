@@ -49,33 +49,7 @@ h1 {
 .dtPreston{
     width: 100%;
 }
-.weatherSum {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(255, 212, 0, 0.8);
-    font-family: noto serif, serif;
-    width:40%;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    border: 1px solid #abadb0;
-    padding: .5em;
-    box-shadow: 0 0 30px #111;
-    color: #004071;
-}
-.weatherSum h3{
-    grid-column: 1 /3;
-    font-size: .75em;
-    margin: 0.25em;
-}
-.weatherSum h4{
-    font-size: .5em;
-    margin: 0.1em;
-}
-.weatherSum p{
-    font-size: .5em;
-    margin: 0.1em;
-}
+
 nav{
 	text-align: center;;
     grid-column: 2 /3;
@@ -169,6 +143,33 @@ footer a{
     font-size: .75em;
 }
 /*city pages only*/
+.weatherSum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 212, 0, 0.8);
+    font-family: noto serif, serif;
+    width:40%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: 1px solid #abadb0;
+    padding: .5em;
+    box-shadow: 0 0 30px #111;
+    color: #004071;
+}
+.weatherSum h3{
+    grid-column: 1 /3;
+    font-size: .75em;
+    margin: 0.25em;
+}
+.weatherSum h4{
+    font-size: .5em;
+    margin: 0.1em;
+}
+.weatherSum p{
+    font-size: .5em;
+    margin: 0.1em;
+}
 .fiveDayTitle{
     display: none;
 }
@@ -182,7 +183,7 @@ display: none;
     margin-bottom: 1em;
 }
 .article h3{
-    color: #ffd400;
+    color: #004071;
     text-align: center;
 }
 .articleImg{
@@ -229,6 +230,7 @@ display: none;
     display:grid;
     justify-items:center;
     grid-gap:1em;
+    margin-bottom: 1em;
 }
 .imageGrid div{
     background-color:#abadb0;
@@ -314,6 +316,7 @@ form label.top input:required:valid{
 }
 .home-city-grid h2{
     background-color: #abadb0;
+    color: #004071;
     margin:0;
     font-size: 3em;
 }
@@ -344,6 +347,7 @@ form label.top input:required:valid{
 }
 .articleHome h2{
     background-color: #abadb0;
+    color: #004071;
     padding: 1em;
 }
 .articleHome p{
